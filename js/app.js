@@ -72,18 +72,20 @@ Player.prototype.handleInput = function(key) {
 // This class requires an update(), render() and
 // a handleInput() method.
 var allEnemies = [
-    new Enemy(x, y, 'images/enemy-bug.png', 100),
-    new Enemy(x, y, 'images/enemy-bug.png', 80),
-    new Enemy(x, y, 'images/enemy-bug.png', 110),
-    new Enemy(x, y, 'images/enemy-bug.png', 200),
-    new Enemy(x, y, 'images/enemy-bug.png', 90),
-    new Enemy(x, y, 'images/enemy-bug.png', 150),
-    new Enemy(x, y, 'images/enemy-bug.png', 120),
+    new Enemy(-108, 10, 'images/enemy-bug.png', 100),
+    new Enemy(-108, 92, 'images/enemy-bug.png', 80),
+    new Enemy(-108, 174, 'images/enemy-bug.png', 110),
+    new Enemy(-108, 10, 'images/enemy-bug.png', 200),
+    new Enemy(-108, 92, 'images/enemy-bug.png', 90),
+    new Enemy(-108, 174, 'images/enemy-bug.png', 150),
+    new Enemy(-108, 10, 'images/enemy-bug.png', 120),
+    new Enemy(-108, 92, 'images/enemy-bug.png', 120),
+    new Enemy(-108, 174, 'images/enemy-bug.png', 120),
 ];
 // Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
+// Place all enemy objectsy in an array called allEnemies
 // Place the player object in a variable called player
-var player = new Player(x, y, 'images/char-boy.png');
+var player = new Player(129, 185, 'images/char-boy.png');
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
